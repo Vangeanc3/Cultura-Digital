@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Roboto";
-}
-
-.loader{
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 101;
     position: fixed;
     background: #151515;
@@ -16,29 +15,44 @@ body{
     width: 100%;
 }
 
-.loader-animation{
-    animation: saida 1s forwards;   
+.loader-animation {
+    animation: saida 1s 3.5s forwards;
 }
 
 @keyframes saida {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    100%{
+
+    100% {
         transform: translateY(-100vh);
         display: none;
     }
 }
 
 
-.loading{
+.loading {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.percent{
+.loading-animation{
+    animation: saidaTexto 1s forwards;
+}
+
+@keyframes saidaTexto {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, -20%);
+        opacity: 0;
+    }
+}
+
+.percent {
     color: #999;
     font-size: 100px;
     font-weight: 400;
@@ -46,7 +60,7 @@ body{
     margin-bottom: 15px;
 }
 
-.progress-bar{
+.progress-bar {
     width: 406px;
     height: 21px;
     background: #111;
@@ -55,9 +69,29 @@ body{
 
 }
 
-.progress{
+.progress {
     width: 200px;
     height: 15px;
     background: #f60d54;
     border-radius: 13px;
+}
+
+.titulo-principal{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #fff;
+    font-family: "Roboto";
+    animation: tituloSaida 2.5s 3.7s forwards;
+    opacity: 0;
+}
+
+@keyframes tituloSaida {
+    0%{
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -2,6 +2,11 @@
     color: white;
 }
 
+.fa-brands:hover{
+    color: red;
+    cursor: pointer;
+}
+
 .hamburgue{
     position: fixed;
     z-index: 100;
@@ -48,7 +53,7 @@
     line-height: 6rem;
 }
 
-.menu ul li:hover{
+.menu ul li a:hover{
     border-bottom: 2px solid #fff;
 }
 

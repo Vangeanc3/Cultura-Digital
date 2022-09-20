@@ -1,0 +1,65 @@
+.fa-brands{
+    color: white;
+}
+
+.hamburgue{
+    position: fixed;
+    z-index: 100;
+    right: 3vw;
+    top: 5vh;
+    cursor: pointer;
+}
+
+.line{
+    height: 3px;    
+    margin: 5px 0;
+    width: 45px;
+    background-color: #fff;
+}
+
+.menu{
+    transition: 1.5s;
+    position: fixed;
+    z-index: 10;
+    right: -30vw;
+    background-color: #000;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle{
+    right: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu ul li{
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+.menu ul li:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.menu .favicons-container{
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu .favicons-container i{
+    font-size: 3.5rem;     
+}

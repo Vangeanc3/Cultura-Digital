@@ -96,3 +96,21 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 680px){
+    .titulo-principal{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 550px){
+    .titulo-principal{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 425px){
+    .titulo-principal{
+        font-size: 2.2rem;
+    }
+}

@@ -24,7 +24,6 @@
 }
 
 
-
 .content{
     color: #fbfcfd;
     position: absolute;
@@ -37,12 +36,16 @@
 
 .content small{
     font-size: 1.6rem;
+    animation: entradaHome 4s 7s forwards;
+    opacity: 0;
 }
 
 .content h1{
+    opacity: 0;
     font-size: 7rem;
     margin: 10px 0px 30px;
     line-height: 80px;
+    animation: entradaHome 4s 7s forwards;
 }
 
 .side-bar{
@@ -70,6 +73,23 @@
     outline: none;
     cursor: pointer;
 }
+
+.content a{
+    opacity: 0;
+    animation: entradaHome 4s 7s forwards;
+}
+
+@keyframes entradaHome {
+    0%{
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .social-links img, .useful-links img{
     width: 25px;
     margin: 5px auto;
